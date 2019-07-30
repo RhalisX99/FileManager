@@ -63,7 +63,7 @@ public class FileManager{
     }
 
     public void saveDefaultConfig() {
-        if (dataFolder.exists()) {
+        if (!dataFolder.exists()) {
             dataFolder.mkdir();
         }
 
